@@ -3,12 +3,12 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="../Css6/Home.css" />
-    <title>Nha Khoa Chăm Sóc Nụ Cười Việt</title>
+    <link rel="stylesheet" href="../Css6/Register.css" />
+    <title>Đăng ký lịch khám</title>
   </head>
   <body>
-    <div class="home">
-      <h1 class="header-1">Nha Khoa Chăm Sóc Nụ Cười Việt</h1>
+    <div class="register">
+      <h1 class="header-1">Đăng ký lịch khám</h1>
       <nav class="nav-menu">
         <a
           href="http://127.0.0.1:5501/Session06/Mini_Project/Home.html"
@@ -25,30 +25,41 @@
         >
       </nav>
       <br />
-      <div class="img">
-        <img
-          src="../img6/Anh1.png"
-          alt="Ảnh đội ngũ bác sĩ"
-          weight="934"
-          height="600"
-        />
-      </div>
-      <div class="main">
-        <div class="main-1">
-          <h2 class="title">Giới thiệu</h2>
-          <p class="title-1">
-            Phòng khám nha khoa chuyên cung cấp các dịch vụ chăm sóc răng miệng
-            cho sinh viên và người dân.
-          </p>
-        </div>
-        <div class="main-1">
-          <h2 class="title">Dịch vụ nổi bật</h2>
-          <ul>
-            <li class="title-1">Khám răng tổng quát</li>
-            <li class="title-1">Lấy cao răng</li>
-            <li class="title-1">Tẩy trắng răng</li>
-          </ul>
-        </div>
+      <div class="input">
+        <label for="fullName"><b>Họ và tên</b></label
+        ><br />
+        <input
+          type="text"
+          id="fullName"
+          placeholder="Nhập họ tên"
+          size="28px"
+        /><br /><br />
+        <label for="email"><b>Email</b></label
+        ><br />
+        <input
+          type="email"
+          id="email"
+          placeholder="example@gmail.com"
+          size="28px"
+        /><br /><br />
+        <label for="tel"><b>Số điện thoại</b></label
+        ><br />
+        <input type="tel" id="tel" size="28px" /><br />
+        <label><b>Chọn dịch vụ</b></label
+        ><br />
+        <select>
+          <option value="Trồng răng tổng quát">Trồng răng tổng quát</option>
+          <option value="Lấy cao răng">Lấy cai răng</option>
+          <option value="Tẩy trắng răng">Tẩy trắng răng</option>
+          <option value="Niềng răng">Niềng răng</option></select
+        ><br /><br />
+        <label><b>Ngày khám</b></label
+        ><br />
+        <input type="date" size="28px" /><br /><br />
+        <label><b>Ghi chú thêm</b></label
+        ><br />
+        <textarea placeholder="Yêu cầu thêm"></textarea><br /><br />
+        <button value="Gửi đăng ký">Gửi đăng ký</button>
       </div>
       <div class="footer">
         <p>&copy 2026 Nha Khoa Chăm Sóc Nụ Cười Việt</p>
